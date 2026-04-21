@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafrobi Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="log">
+                <span><i>Nafrobi Portfolio</i></span>
+            </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="hamburg">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <div class="links">
+                <a href="#Home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a> 
+                <a href="#contact" class="contact-link">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+    <section id="Home">
+        <div class="main-container">
+            <div class="content">
+                <h3>Welcome to my website</h3>
+                <h1>Hi! I'm <span>Nafrobi</span></h1>
+                <div class="typewriter"><b>IT STUDENT</b> & <b>WEB DEVELOPER</b></div>
+                <p><b>Creating modern and functional digital experiences with a touch of nature.</b></p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+
+                <button class="btn-cv">Download CV</button>
+            </div>
+
+            <div class="image">
+                <div class="img-box">
+                    <img src="naf.jpg" alt="Nafrobi">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+             <img src="naf.jpg" alt="About Me">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <h3>My Name is <span>Nafrobi</span></h3>
+            <p>I'm a 2nd-Year IT Student at the MTU Tepi campus in Ethiopia. <br> 
+            I see technology as more than just lines of code; it's the ultimate bridge that connects people and information to real-world solutions.<br>
+            My goal is to keep building tools that actually make a difference for my peers and the community around me.</p>
+        </div>
+    </section>
+
+    
+
+    <section id="projects" class="sub-page">
+        <div class="section-title">
+            <h1>My <span>Projects</span></h1> 
+            <div class="line"></div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Internet Programming</h3>
+                <p>Clean and responsive websites.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Management and design projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="sub-page">
+        <div class="section-title">
+            <h1>My <span>Services</span></h1>
+            <div class="line"></div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Web Design</h3>
+                <p>I build modern and user-friendly websites.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>App Development</h3>
+                <p>Creating functional mobile applications.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>SEO Optimization</h3>
+                <p>Improving website visibility on search engines.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="sub-page">
+        <div class="section-title">
+            <h1>Contact <span>Me</span></h1>
+            <div class="line"></div>
+        </div>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn-cv">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        const check = document.getElementById('check');
+        const links = document.querySelectorAll('.links a');
+        
+        // Mobile irratti yeroo link cuqaasamu menu-n akka cufamu godha
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                check.checked = false;
+            });
+        });
+    </script>
+</body>
+</html>
